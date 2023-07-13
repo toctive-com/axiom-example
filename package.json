@@ -1,0 +1,61 @@
+{
+  "name": "axiom-example",
+  "private": true,
+  "version": "0.1.1-alpha.1",
+  "description": "Axiom project. Axios is a backend framework built using TypeScript and implement Express.js functionality from scratch",
+  "keywords": [
+    "axiom",
+    "backend",
+    "TypeScript",
+    "requests",
+    "express"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toctive-com/axiom-example.git"
+  },
+  "bugs": {
+    "url": "https://github.com/toctive-com/axiom-example/issues"
+  },
+  "homepage": "https://github.com/toctive-com/axiom-example#readme",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "nodemon ./src/index.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "build:watch": "tsup src/index.ts --watch --format cjs,esm --dts",
+    "lint": "tsup ./src/",
+    "prettier": "prettier . --check --ignore-path .prettierignore",
+    "prettier:fix": "prettier . --write --ignore-path .prettierignore",
+    "eslint": "eslint .",
+    "eslint:fix": "eslint . --fix"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.2",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@vitest/coverage-v8": "^0.33.0",
+    "eslint": "^8.44.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^16.0.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "nodemon": "^3.0.1",
+    "prettier": "3.0.0",
+    "ts-node": "^10.9.1",
+    "tsc": "^2.0.4",
+    "tsconfig-paths": "^4.2.0",
+    "tslib": "^2.6.0",
+    "tsup": "^7.1.0",
+    "typescript": "^5.1.6",
+    "vitest": "^0.33.0"
+  },
+  "dependencies": {
+    "@toctive/axiom": "^0.1.1-alpha.1"
+  }
+}
