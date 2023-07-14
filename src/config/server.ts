@@ -2,6 +2,7 @@ export default {
   /**
    * The hostname or IP address where the application will be hosted.
    *
+   * @example `localhost` or `127.0.0.1`
    * @type {string}
    * 
    */
