@@ -1,4 +1,4 @@
-import Maintenance from '@/bootstrap/Maintenance';
+import Maintenance from '@/core/Maintenance';
 import config from '@/config';
 import { AppServiceProvider } from '@/providers/AppServiceProvider';
 import { RouteServiceProvider } from '@/providers/RouteServiceProvider';

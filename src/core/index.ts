@@ -1,4 +1,4 @@
-import Application from '@/bootstrap/Application';
+import Application from '@/core/Application';
 import { resolve } from 'node:path';
 
 /**

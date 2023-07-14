@@ -1,4 +1,4 @@
-import { runApp } from '@/bootstrap';
+import { runApp } from '@/core';
 import { HttpKernel, clustering } from '@toctive/axiom';
 
 /**
