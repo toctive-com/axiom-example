@@ -10,11 +10,9 @@ export * from './Application';
 export * from './Maintenance';
 
 /**
- * The function creates and returns a new application instance with singletons for
- * main classes (HttpKernel and HttpRequest).
+ * Creates and returns a new application instance.
  *
- * @returns {Promise<Application>} an instance of the `Application` class with `
- * HttpKernel` and `HttpRequest` singletons registered.
+ * @returns an instance of the `Application`.
  *
  */
 export async function runApp(): Promise<Application> {
