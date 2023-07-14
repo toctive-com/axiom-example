@@ -10,7 +10,7 @@
     "requests",
     "express"
   ],
-  "author": "",
+  "author": "Toctive.com <info@toctive.com> (https://toctive.com)",
   "license": "MIT",
   "repository": {
     "type": "git",
