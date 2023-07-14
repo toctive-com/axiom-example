@@ -27,5 +27,4 @@ async function main() {
  * and debugging. The main process will be opened for every unless killed manually.
  *
  */
-// clustering(main);
-main();
+clustering(main, {processes: 1});
