@@ -1,8 +1,4 @@
-import {
-  Router,
-  RouteServiceProvider as ServiceProvider,
-} from '@toctive/axiom';
-import { join } from 'path';
+import { RouteServiceProvider as ServiceProvider } from '@toctive/axiom';
 
 export class RouteServiceProvider extends ServiceProvider {
   public async register(): Promise<void> {
@@ -10,8 +6,7 @@ export class RouteServiceProvider extends ServiceProvider {
   }
 
   public async boot(): Promise<void> {
-    await Router.loadFile(join(__dirname, '..', 'routes', 'api.ts'));
-    // require(join( __dirname, '..', 'routes', 'api.ts'))
+    await require('../routes/api.ts');
     // ...
   }
 }
