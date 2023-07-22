@@ -1,3 +1,4 @@
+import apiRouter from '@/routes/api';
 import { RouteServiceProvider as ServiceProvider } from '@toctive/axiom';
 
 export class RouteServiceProvider extends ServiceProvider {
@@ -6,7 +7,9 @@ export class RouteServiceProvider extends ServiceProvider {
   }
 
   public async boot(): Promise<void> {
-    await require('../routes/api.ts');
-    // ...
+    this.registerRoutes(apiRouter);
+
+    // Make sure to call the next function after registering all router
+    this.handlerNotFoundError();
   }
 }
