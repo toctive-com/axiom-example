@@ -39,6 +39,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.4.2",
+    "@types/supertest": "^2.0.12",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@vitest/coverage-v8": "^0.33.0",
     "eslint": "^8.44.0",
@@ -48,12 +49,14 @@
     "eslint-plugin-promise": "^6.1.1",
     "nodemon": "^3.0.1",
     "prettier": "3.0.0",
+    "supertest": "^6.3.3",
     "ts-node": "^10.9.1",
     "tsc": "^2.0.4",
     "tsconfig-paths": "^4.2.0",
     "tslib": "^2.6.0",
     "tsup": "^7.1.0",
     "typescript": "^5.1.6",
+    "vite-tsconfig-paths": "^4.2.0",
     "vitest": "^0.33.0"
   },
   "dependencies": {
