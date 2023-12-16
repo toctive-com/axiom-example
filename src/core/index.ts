@@ -7,7 +7,11 @@ import { resolve } from 'node:path';
  *
  */
 export * from './Application';
+export * from './Logger';
 export * from './Maintenance';
+
+// Get instance of Application
+export const app = new Application({ basePath: resolve(__dirname, '../..') });
 
 /**
  * Creates and returns a new application instance.
@@ -16,9 +20,6 @@ export * from './Maintenance';
  *
  */
 export async function runApp(): Promise<Application> {
-  // Get instance of Application
-  const app = new Application({ basePath: resolve(__dirname, '../..') });
-
   // Load Service Providers which will load Routes, Middleware ... etc
   await app.registerServiceProviders();
 
